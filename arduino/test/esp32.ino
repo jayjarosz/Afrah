@@ -1,11 +1,8 @@
 /**
- * ESP32 Dual Matrix Controller - Fixed Version
+ * ESP32 Dual Matrix Controller - v1.2
  * 
  * Fixed issues:
- * - Proper initialization sequence to prevent stuck LEDs
- * - Better SD card error handling
- * - Matrix reset functionality
- * - Improved timing and state management
+ * - Fixed text matrix not being displayed fully due to incorrect PIXEL_PER_CHAR value (4). The actual value is 5 + 1 for space.
  */
 
 // Include required libraries
@@ -38,7 +35,7 @@
 //================ TIMING AND ANIMATION SETTINGS ================
 #define DEFAULT_GIF_FRAME_DELAY 50  // Default delay if not specified in file
 #define TEXT_SCROLL_DELAY 100       
-#define PIXEL_PER_CHAR 4           
+#define PIXEL_PER_CHAR 6           
 #define BRIGHTNESS 20              
 #define STARTUP_DELAY 2000         // 2 second delay before starting
 
