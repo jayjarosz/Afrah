@@ -1,5 +1,5 @@
 /**
- * ESP32 Dual Matrix Controller - Fixed Version
+ * ESP32 Dual Matrix Controller - v1.1
  * 
  * Fixed issues:
  * - Proper initialization sequence to prevent stuck LEDs
